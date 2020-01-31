@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% if title %}
+      <title>{{ title }} - Fiontain.com</title>
+      {% else %}
+      <title>Fiontain.com!</title>
+      {% endif %}
+<style>
+a:link {
+  text-decoration: none;
+  color: #B300B3;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #B300B3;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #B300B3;
+}
+
+a:active {
+  text-decoration: underline;
+  color: #B300B3;
+}
+
+p.two {
+  border-style: solid;
+  border-width: medium;
+  border-color: #B3B300;
+  background-color: #1E1103;
+  margin: auto;
+  padding: 10px;
+  width: 60%;
+  border-top-color:#1E1103;
+  font-size: 200%;
+  
+}
+body {
+  font-family: "Source Code Pro";
+  background-color: #03101e;
+  color: #00B3B3;
+}
+p.one {
+  color: #B300B3;
+  border-style: solid;
+  border-width: medium;
+  border-color: #B3B300;
+  background-color: #1E1103;
+  margin: auto;
+  padding: 10px;
+  width: 60%;
+  text-align: center;
+  border-bottom-color:#1E1103;
+  font-size: 250%;
+  
+}
+
+</style>
+</head>
+<body>
+
+
+<p class="one">&gt;&gt;Fiontain.com <br>&gt;&gt;<a href="index" target="_blank">Home</a> &nbsp;&nbsp;&nbsp;&nbsp; &gt;&gt;<a href="contact" target="_blank">Contact</a> <br>--------------------------------------</p>
+
+{% block content %}{% endblock %}
+
+
+</body>
+</html>
